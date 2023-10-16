@@ -1,25 +1,40 @@
+function logOut() {
+  localStorage.removeItem('userLogin')
+  window.location.reload();
+}
+
 function renderHeader() {
   let loginData = null;
-  // if (localStorage.getItem("loginUser")){
-  //     loginData = JSON.parse(localStorage.getItem("loginUser"))
-  // }
-
+  if (localStorage.getItem("userLogin")){
+      loginData = JSON.parse(localStorage.getItem("userLogin"))
+  }
+  
   let headerEl = document.querySelector(".div_header");
+  let userBoxString = `
+    ${loginData 
+        ? `
+            <span style="color: black; font-size: 20px;font-weight: 900">${loginData.name}</span>
+            <button style="width: 60px;height:50px;background-color:rgb(194, 191, 191);border-radius: 0;border: 0;font-weight: 900;color:red;font-size: 18px;text-decoration: underline;  " onclick="logOut()">Thoát</button>
+        ` 
+        : ` <div>
+              <button type="button" onclick ="formUserRegister(event)">Đăng ký / Đăng nhập</button>
+            </div>`
+    }
+  `
   headerEl.innerHTML = `
     <div class="div_header_title">
-        <img src="/img/channels4_profile.jpg">
-        <h1>Mia-Food</h1>
+        <img onclick="logOut()" src="/img/channels4_profile.jpg">
+        <h1 onclick="logOut()">Mia-Food</h1>
     </div>
     <div class="div_header_nav">
         <a href="">Bánh tráng</a>
         <a href="">Cơm cháy</a>
-        <a href="">Trái cây sấy</a>
         <a href="">Khô tẩm vị</a>
         <a href="">Khác</a>
     </div>
     <div class="div_header_user">
         <h3>Xin chào!</h2>
-        <button type="button" onclick ="formUserRegister(event)">Đăng ký / Đăng nhập</button>
+        ${userBoxString}
     </div>
     `
 }
@@ -89,6 +104,8 @@ function renderCarouse() {
   carouseEl.innerHTML = `
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
+
+       
         <div class="carousel-item active">
             <img  src="/img/anh 1.jpg" class="d-block w-80 " alt="...">
         </div>
@@ -96,11 +113,10 @@ function renderCarouse() {
             <img src="/img/anh 2.jpg" class="d-block w-80" alt="...">
         </div>
         <div class="carousel-item">
-            <img  src="/img/anh 3.jpg" class="d-block w-80" alt="...">
-        </div>
-        <div class="carousel-item">
             <img  src="/img/anh 4.jpg" class="d-block w-80" alt="...">
         </div>
+        
+
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -133,7 +149,7 @@ function formUserRegister(event) {
            <input type="password" placeholder="Mật khẩu" name="password">
        </div>
        <div>
-           <input type="password" placeholder=" Nhập lại mật khẩu" name="password">
+           <input type="password" placeholder=" Nhập lại mật khẩu" name="password_confirm">
        </div>
        <div>
            <span>Bạn đã có tài khoản!</span>
@@ -179,15 +195,31 @@ function register(event) {
     id : Date.now() * Math.random(),
     name : event.target.username.value,
     password : event.target.password.value,
-    role : "member"
+    role : "admin",
   }
+  if (newUser.password != event.target.password_confirm.value){
+    alert("Mật khẩu không trùng khớp")
+    return
+  }
+  if(newUser.password.length < 3) {
+    alert("Mật khẩu cần ít nhất 3 ký tự")
+    return
+}
+  if(newUser.name.length < 3) {
+    alert("Tên đăng nhập cần ít nhất 3 ký tự")
+    return
+}
   let users = JSON.parse(localStorage.getItem("users")) || [];
+  if (users.find((user) => user.name == newUser.name )){
+    alert("Tên đăng nhập bị trùng")
+    return
+  }
   localStorage.setItem("users",JSON.stringify([...users,newUser]))
   alert("Đăng kí thành công!")
   formUserLogin(event)
 }
 
-
+// Đăng nhập
 
 function login(event) {
   event.preventDefault()
@@ -196,8 +228,21 @@ function login(event) {
     password : event.target.password.value,
   }
   let users = JSON.parse(localStorage.getItem("users")) || [];
-  localStorage.setItem("loginUser", JSON.stringify(user));
+  
+  let userInfor = users.find(item => item.name == user.name);
+    if(!userInfor) {
+        alert("Không tìm thấy người dùng!")
+        return
+    }
+    if(userInfor.password != user.password) {
+        alert("Sai mật khẩu!")
+        return
+    }
+  localStorage.setItem("userLogin", JSON.stringify(userInfor));
   alert("Đăng nhập thành công!")
   window.location.href = "/"
 }
+
+
+
 
