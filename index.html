@@ -4,45 +4,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/main.css">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-</head>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 <body>
-    <div class="div_header">
-        <!-- <div class="div_header_title">
-            <img src="/img/channels4_profile.jpg">
-            <h1>Mia-Food</h1>
+    <div class="mainBody-container">
+        <header class="mainHeader" >
+            <!-- <div class="logo">
+                <img src="/assets/img/channels4_profile.jpg">
+            </div>
+            <div class="nav">
+                <input type="text" placeholder="Tìm kiếm">
+                <i id="btn-search" style="color: rgba(0, 0, 0, 0.696);" class="fa-solid fa-magnifying-glass"></i>
+                <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="user">
+                <button type="button">Đăng nhập</button>
+            </div> -->
+        </header>
+        <div class="mainContent">
+            <div class="category">
+                <!-- <div class="form_category">
+                    <button onclick="window.location.href='/'">Trang chủ</button>
+                    <button onclick="window.location.href='/page/category.html'">Tất cả sản phẩm</button>
+                    <button>Mới ra mắt</button>
+                    <button>Bán chạy</button>
+                    <button>Giỏ hàng</button>
+                </div> -->
+            </div>
+            <div class="slide">
+                <!-- <div class="img">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/img/anh 1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/anh 2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/anh 3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div> -->
+            </div>
+            <div class="formContent">
+                <div class="title">
+                    <span>Sản phẩm mới ra mắt</span>
+                    <button>Xem thêm</button>
+                </div>
+               <div class="box">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/aloha-dao/image/upload/4kwp29wfjppzzu1ilqo2ddz3znlg.jpg" alt="">
+                    <span class="name">Thơm sấy</span><br>
+                    <span class="price">25000 đ</span>
+                    <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                </div>
+                <div class="item">
+                    <img src="https://res.cloudinary.com/aloha-dao/image/upload/53cll29ol85fc8e3j14warucdmpi.jpg" alt="">
+                    <span class="name">Khô mực sợi trứng muối</span><br>
+                    <span class="price">140000 đ</span>
+                    <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                </div>
+                <div class="item">
+                    <img src="https://res.cloudinary.com/aloha-dao/image/upload/guk1xeb2k4k11armuywkg5k3okcn.jpg" alt="">
+                    <span class="name">Bánh tráng dẻo me cay</span><br>
+                    <span class="price">100000 đ</span>
+                    <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                </div>
+                <div class="item">
+                    <img src="https://res.cloudinary.com/aloha-dao/image/upload/zzz2k5o5pjuezetcmjkcsynjmhiz.jpg" alt="">
+                    <span class="name">Tóp mỡ chiên mắm tỏi</span><br>
+                    <span class="price">120000 đ</span>
+                    <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                </div>
+                <div class="item">
+                    <img src="https://res.cloudinary.com/aloha-dao/image/upload/0kq68azfamsdzf0qk0orks5mg3zf.jpg" alt="">
+                    <span class="name">Chôm chôm xí muội</span><br>
+                    <span class="price">125000 đ</span>
+                    <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                </div>
+                <div class="item">
+                    <img src="https://res.cloudinary.com/aloha-dao/image/upload/axehe8zxzl0fyk9gnrip1hq5c1iv.jpg" alt="">
+                    <span class="name">Rong biển cháy tỏi ớt</span><br>
+                    <span class="price">50000 đ</span>
+                    <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                </div>
+               </div>
+               <div class="title">
+                <span>Sản phẩm bán chạy</span>
+                <button>Xem thêm</button>
+                </div>
+                <div class="box">
+                <div class="item">
+                <img src="https://res.cloudinary.com/aloha-dao/image/upload/oztg3as2neuzfrkdq0qavize2hgz.jpg" alt="">
+                <span class="name">Cơm cháy mắm tỏi</span><br>
+                <span class="price">55000 đ</span>
+                <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                </div>
+                <div class="item">
+                <img src="https://res.cloudinary.com/aloha-dao/image/upload/cdzlx1slyhg2b4o5c0lhu3xzk2gm.jpg" alt="">
+                <span class="name">Cơm cháy chà bông</span><br>
+                <span class="price">130000 đ</span>
+                <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                </div>
+                <div class="item">
+                <img src="https://res.cloudinary.com/aloha-dao/image/upload/7kz7042vy8l2oeutpm7vi2kfdppx.jpg" alt="">
+                <span class="name">Set bánh tráng muối nhuyễn xì ke</span><br>
+                <span class="price">125000 đ</span>
+                <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                </div>
+                <div class="item">
+                <img src="https://res.cloudinary.com/aloha-dao/image/upload/stp0hv2vfa1v8igywf4aotjn6oc1.jpg" alt="">
+                <span class="name">Chà bông gà</span><br>
+                <span class="price">120000 đ</span>
+                <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                </div>
+                <div class="item">
+                <img src="https://res.cloudinary.com/aloha-dao/image/upload/ulkvd0gn8t2csrkr4d8b7yzqertr.jpg" alt="">
+                <span class="name">Khô bò miếng bự</span><br>
+                <span class="price">300000 đ</span>
+                <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                </div>
+                <div class="item">
+                <img src="https://res.cloudinary.com/aloha-dao/image/upload/cy47bnpzc212zh7y866qciey7bum.jpg" alt="">
+                <span class="name">Bánh tráng dẻo phơi sương</span><br>
+                <span class="price">55000 đ</span>
+                <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                </div>
+                </div>
+                </div>
         </div>
-        <div class="div_header_nav">
-            <a href="">Bánh tráng</a>
-            <a href="">Cơm cháy</a>
-            <a href="">Trái cây sấy</a>
-            <a href="">Khô tẩm vị</a>
-            <a href="">Khác</a>
-        </div>
-        <div class="div_header_user">
-            <h3>Xin chào!</h2>
-                <button> Đăng kí / Đăng nhập </button>
+        <footer class="mainFooter">
+            <!-- <div class="footer-left"> -->
+                <!-- <div class="logo-footer">
+                    <img src="./assets/img/channels4_profile.jpg">
+                    <h1>MiaFood</h1>
+                </div>
+                <div class="info-footer">
+                    <h3 style="font-size: 25px;">HotLine: 1900.191919</h3>
+                    <h3 style="font-size: 25px;">Địa chỉ: .........</h3>
+                </div>
+            </div>
+            <div class="footer-mid">
+                <div>
+                    <ul>Thông tin
+                        <li>Sản phẩm mới ra mắt</li>
+                        <li>Sản phẩm bán chạy</li>
+                        <li>Sản phẩm đang khuyến mãi</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-right">
+                <footer class="text-center text-white">
+                    Grid container
+                    <div style="color: white;" class="text-center text-dark p-3">
+                        <h3>Kết nối với chúng tôi</h3>
+                    </div>
+                    <div class="container pt-4">
+                        Section: Social media
+                        <section class="mb-4">
+                            Facebook
+                            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                                data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
 
-        </div> -->
+                            Twitter
+                            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                                data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                            Google
+                            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                                data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+                            Instagram
+                            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                                data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+                        </section>
+                        Section: Social media
+                    </div>
+                    
+                </footer> -->
+        </footer>
+
     </div>
-    <div class="div_body">
-        <div class="div_slide">
-           
-        </div>
-        
-        <div   class="div_user">
-        
-        </div>
-    </div>
-    <div class="div_footer">
-      
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="/main.js"></script>
 </body>
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+<script src="/src/main.js"></script>
+<!-- <script src="/src/admin.js"></script> -->
+
 </html>
+
+
+
+
+

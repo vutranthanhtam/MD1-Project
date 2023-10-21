@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/admin/product manager/">
+    <link rel="stylesheet" href="/assets/css/admin.css">
+        
+</head>
+
+<body>
+    <div id="admin_page">
+        <div class="admin_nav">
+            <div>
+                <span class="user_title">Xin chào</span>
+            </div>
+            <button class="btn_nav" onclick="logOut()" >Logout</button>
+        </div>
+        <div class="page_body">
+            <div class="left_content">
+                <button onclick="loadMenuData('product')" class="item btn btn-primary">Product Manager</button>
+                <button onclick="loadMenuData('receipt')" class="item btn btn-primary">Receipt Manager</button>
+            </div>
+            <div class="right_content">
+
+                
+                <button onclick="addNewProduct()" class="btn btn-success">Add New</button>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Avatar</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Tools</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table_body">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Product 1</td>
+                            <td>50000</td>
+                            <td>
+                                <img src="" style="width: 50px; height: 50px; border-radius: 50%;">
+                            </td>
+                            <td>Áo</td>
+                            <td>
+                                True
+                            </td>
+                            <td>
+                                <button class="btn btn-primary">Edit</button>
+                                <button class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+<script src="/src/admin.js"></script>
+<script src="/admin/product/product.js"></script>
+</html>
+</body>
+</html>

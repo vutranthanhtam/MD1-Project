@@ -1,0 +1,253 @@
+$btn : 18px;
+$font-size : 18px;
+
+body {
+    margin: 0;
+    padding: 0;
+    .mainBody-container {
+        width: 100%;
+        height: 100wh;
+        
+        .mainHeader{
+            width: 100%;
+            height: 80px;
+            background-color: #4be44ee2;
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top : 0;
+            z-index: 1000;
+            .logo {
+                width: 25%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                img {
+                    border-radius: 50%;
+                }
+            }
+            .nav {
+                width: 55%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                input {
+                    width: 600px;
+                    height: 50%;
+                    border-radius: 60px;
+                    border: 0.5px solid chartreuse ;
+                    padding-left: 15px;
+                    font-size: $font-size;
+                    color: rgb(51, 49, 49);
+                    font-weight: 800;
+                    position: relative;
+                }
+                #btn-search {
+                    position: absolute;
+                    right:145px ;
+                    font-size: $btn;
+                }
+                div {
+                    width: 50px;
+                    height: 50px;
+                    background-color:#87B44B;
+                    border-radius: 60%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 5px;
+                    #btn-catr {
+                        font-size: calc($btn - 1px);
+                        color: rgb(51, 49, 49);
+                    }
+                }
+                div:hover{
+                    background-color: #7cc023;
+                    
+                }
+            }
+            .user {
+                width: 20%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                button {
+                    width: 120px;
+                    height: 50px;
+                    font-size: $font-size;
+                    font-weight: 530;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #87B44B;
+                    border: 2px solid #3c6405;
+                }
+                :hover{
+                    background-color: #7cc023;
+                    font-weight: 900;
+                }
+            }
+        }
+        .mainContent{
+            width: 100%;
+            height: 1450px;
+            background-color: #a2c17788;
+            .category{
+                width: 100%;
+                height: 70px;
+                background-color: #87B44B;
+                .form_category{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    button{
+                        width: 150px;
+                        height: 100%;
+                        border: 0;
+                        background-color: #87B44B;
+                        font-size: $btn;
+                        font-weight: 500;
+                    }
+                    button:hover{
+                        background-color: rgba(245, 245, 245, 0.782);
+                        color: #7cad3a;
+                    }
+                }    
+            }
+            
+            .slide{
+                width: 100%;
+                height: 520px;
+                display: flex;
+                justify-content: center;
+                .img{
+                    width: 80%;
+                    height: 60%;
+                    display: flex;
+                    margin-top: 5px;
+                }
+               
+            }
+            .formContent{
+                width: 100%;
+                height: 630px;
+                .title{
+                    width: 100%;
+                    height: 40px;   
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0 20px ;
+                    span{
+                        font-weight: 700;
+                        padding-top: 2px;
+                        font-size: 25px;
+                    }
+                    button{
+                        border-radius: 10px;
+                        margin-top: 3px;
+                        background-color: #7CC023;    
+                    }
+                }     
+                .box{
+                    width: 95%;
+                    height: 275px;
+                    margin-left: 2.5%;
+                    display: flex;
+                    .item{
+                        width: 230px;   
+                        height: 270px;
+                        background-color: white;
+                        margin-left: 5px;
+                        border: 2px rgb(208, 201, 201) solid;
+                        position: relative;
+                        img{
+                            width: 180px;
+                            height: 150px;
+                            margin-left: 25px;
+                        }
+                        span{
+                            display: flex;
+                            
+                            margin-left: 25px;
+                            font-weight: 900;
+                        }
+                        div {
+                            width: 30px;
+                            height: 30px;
+                            background-color:#87B44B;
+                            border-radius: 60%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-left: 5px;
+                            position: absolute;
+                            bottom: 5px;
+                            right: 5px;
+                            #btn-catr {
+                                font-size: calc($btn - 1px);
+                                color: rgb(51, 49, 49);
+                            }
+                        }
+                    }
+                }
+            }
+        
+        }
+        .mainFooter{
+            width: 100%;
+            height: 200px;
+            background-color: #558d068b;
+            border: 5px rgba(0, 0, 0, 0.453) solid;
+            display: flex;
+            padding-top: 10px;
+            .footer-left{
+                width: 40%;
+                height: 100%;
+                margin-left: 15px;
+                .logo-footer{
+                    display: flex;
+                    width: 100%;
+                    height: 40%;
+                    
+                    img {
+                        border-radius: 50%;
+                    }
+                    h1 {
+                        font-size: calc($font-size + 14px);
+                        display: flex;
+                        align-items: center;
+                        margin-left: 5px;   
+                    }
+                }
+            }
+            .footer-mid{
+                width: 30%;
+                height: 100%;
+                display: flex;
+                font-size: 22px;
+                ul{
+                    font-weight: 600;
+                    li{
+                        font-weight: 100;
+                        text-decoration: none;
+                    }
+                    li:hover{
+                        color: red;
+                    }
+                }    
+            }
+            .footer-right{
+                width: 30%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+        }   
+    }
+}

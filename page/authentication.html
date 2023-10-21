@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="/assets/css/authentication.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+<body>
+    <div class="mainBody-container">
+        <header class="mainHeader">
+
+        </header>
+        <div class="mainContent">
+            <div class="formUserBox">
+                <!-- <form class="userBox">
+                    <div class="userTitle">
+                        <span>Đăng nhập và tạo tài khoản</span>
+                    </div>
+                    <div>
+                        <input type="text" name="username" placeholder="Tài khoản">
+                    </div>
+                    <div>
+                        <input type="password" name="password" placeholder="Mật khẩu">
+                    </div>
+                    <div>
+                        <input type="password" name="password" placeholder="Mật khẩu">
+                    </div>
+                    <span>Bạn chưa có tài khoản!</span><span class="span-btn">Đăng ký?</span>
+                    <div>
+                        <button type="submit">Đăng nhập</button>
+                    </div>
+                    
+                </form> -->
+            </div>
+            <div class="formContent">
+                <div class="title">
+                    <span>Sản phẩm mới ra mắt</span>
+                    <button>Xem thêm</button>
+                </div>
+                <div class="box">
+                    <div class="item">
+                        <img src="https://res.cloudinary.com/aloha-dao/image/upload/4kwp29wfjppzzu1ilqo2ddz3znlg.jpg"
+                            alt="">
+                        <span class="name">Thơm sấy</span><br>
+                        <span class="price">25000 đ</span>
+                        <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                    <div class="item">
+                        <img src="https://res.cloudinary.com/aloha-dao/image/upload/53cll29ol85fc8e3j14warucdmpi.jpg"
+                            alt="">
+                        <span class="name">Khô mực sợi trứng muối</span><br>
+                        <span class="price">140000 đ</span>
+                        <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                    <div class="item">
+                        <img src="https://res.cloudinary.com/aloha-dao/image/upload/guk1xeb2k4k11armuywkg5k3okcn.jpg"
+                            alt="">
+                        <span class="name">Bánh tráng dẻo me cay</span><br>
+                        <span class="price">100000 đ</span>
+                        <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                    <div class="item">
+                        <img src="https://res.cloudinary.com/aloha-dao/image/upload/zzz2k5o5pjuezetcmjkcsynjmhiz.jpg"
+                            alt="">
+                        <span class="name">Tóp mỡ chiên mắm tỏi</span><br>
+                        <span class="price">120000 đ</span>
+                        <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                    <div class="item">
+                        <img src="https://res.cloudinary.com/aloha-dao/image/upload/0kq68azfamsdzf0qk0orks5mg3zf.jpg"
+                            alt="">
+                        <span class="name">Chôm chôm xí muội</span><br>
+                        <span class="price">125000 đ</span>
+                        <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                    <div class="item">
+                        <img src="https://res.cloudinary.com/aloha-dao/image/upload/axehe8zxzl0fyk9gnrip1hq5c1iv.jpg"
+                            alt="">
+                        <span class="name">Rong biển cháy tỏi ớt</span><br>
+                        <span class="price">50000 đ</span>
+                        <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                </div>
+                <div class="title">
+                    <span>Sản phẩm bán chạy</span>
+                    <button>Xem thêm</button>
+                </div>
+                <div class="box">
+                    <div class="item">
+                        <img src="https://res.cloudinary.com/aloha-dao/image/upload/oztg3as2neuzfrkdq0qavize2hgz.jpg"
+                            alt="">
+                        <span class="name">Cơm cháy mắm tỏi</span><br>
+                        <span class="price">55000 đ</span>
+                        <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                    <div class="item">
+                        <img src="https://res.cloudinary.com/aloha-dao/image/upload/cdzlx1slyhg2b4o5c0lhu3xzk2gm.jpg"
+                            alt="">
+                        <span class="name">Cơm cháy chà bông</span><br>
+                        <span class="price">130000 đ</span>
+                        <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                    <div class="item">
+                        <img src="https://res.cloudinary.com/aloha-dao/image/upload/7kz7042vy8l2oeutpm7vi2kfdppx.jpg"
+                            alt="">
+                        <span class="name">Set bánh tráng muối nhuyễn xì ke</span><br>
+                        <span class="price">125000 đ</span>
+                        <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                    <div class="item">
+                        <img src="https://res.cloudinary.com/aloha-dao/image/upload/stp0hv2vfa1v8igywf4aotjn6oc1.jpg"
+                            alt="">
+                        <span class="name">Chà bông gà</span><br>
+                        <span class="price">120000 đ</span>
+                        <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                    <div class="item">
+                        <img src="https://res.cloudinary.com/aloha-dao/image/upload/ulkvd0gn8t2csrkr4d8b7yzqertr.jpg"
+                            alt="">
+                        <span class="name">Khô bò miếng bự</span><br>
+                        <span class="price">300000 đ</span>
+                        <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                    <div class="item">
+                        <img src="https://res.cloudinary.com/aloha-dao/image/upload/cy47bnpzc212zh7y866qciey7bum.jpg"
+                            alt="">
+                        <span class="name">Bánh tráng dẻo phơi sương</span><br>
+                        <span class="price">55000 đ</span>
+                        <div><i id="btn-catr" class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="mainFooter">
+
+        </footer>
+
+    </div>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+<script src="/src/main.js"></script>
+<script src="/src/authentication.js"></script>
+
+</html>
